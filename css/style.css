@@ -15,6 +15,32 @@ body{
     /* display: flex;
     justify-content: center; */
 }
+.img{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/17.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+}
+.img1{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/23.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    /* padding-bottom: 200px; */
+    height: 100vh;
+    width: 100%;
+}
+.img2{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../images/20.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    /* padding-bottom: 200px; */
+    height: 100vh;
+    width: 100%;
+}
 .navbar{
     height: 10%;
     color: white;
@@ -22,6 +48,7 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-between;
+    /* transition: 0.5s ease-in-out; */
 }
 .navbar h1{
     text-transform:uppercase;
@@ -31,12 +58,14 @@ body{
 .navbar ul{
     /* display:inline; */
     list-style: none;
+
 }
 .navbar li{
     font-size:20px;
     text-transform:uppercse;
     margin-right: 30px;
     display: inline;
+   
 }
 .navbar li a{
     font-size: 20px;
@@ -45,6 +74,12 @@ body{
     color: white;
     font-weight:bold;
     font-size:15px;
+}
+.current{
+    border-radius: 20px;
+    padding: 10px 10px;
+    background: #009688;
+    color: white;
 }
 .text{
     /* border: 1px solid white; */
@@ -71,7 +106,7 @@ body{
     grid-template-columns: 1fr 1fr; */
     transition: all 0.5s ease-in-out;
 }
-button{
+.bt{
     margin: 40px;
     color:white;
     text-transform:uppercase;
@@ -86,9 +121,212 @@ button{
     cursor: pointer;
     position:relative;
     overflow:hidden;
-  
 }
-.btn:hover{
-      margin-top: 20px;
-    
+button:hover{
+    color:grey;
+}
+.form{
+    font-family: "Poppins";
+    color: white;
+    width: 700px;
+    height: 600px;
+    border: 1px dotted grey;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 30px;
+    line-height: 3em;
+}
+.form h3{
+    margin-top:30px;
+    margin-right: 320px;
+    font-size: 30px;
+}
+.form h2{
+    margin-top:30px;
+    margin-right: 320px;
+    font-size: 30px;
+}
+.pass{
+    margin-left: 25px;
+}
+input[type="text"]{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 5px 10px;
+}
+input[type="password"]{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 5px 10px;
+}
+.form1{
+    margin-top: 20px;
+    margin-right: 20px;
+    /* text-align:center; */
+}
+.icons{
+    width:100%;
+    margin-top:10px;
+ 
+}
+.ic{
+    margin-left:1300px;
+}
+.tweet{
+    transition: 0.5s ease-in-out;
+    padding: 10px;
+    width: 30px;
+}
+.tweet:hover{
+    margin-bottom:20px
+}
+
+/* NEWS */
+.Mother{
+    width: 100%;
+    display: grid;
+    /* border:1px solid white; */
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid white; */
+}
+.Mother h1{
+    color:white;
+}
+.Mother p{
+    color:white;
+}
+.trending{
+    text-align:center;
+    font-size: 60px;
+    color:white;
+}
+.gridbox1{
+    /* border: 1px solid blue; */
+    margin-right: 5px;
+    margin-left:10px;
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+.gridbox2{
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+.gridbox3{
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    margin-right:10px;
+    display:grid;
+    grid-template-rows: 3fr 1fr;
+}
+.griditem1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/22.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 300px;
+}
+.griditem2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/18.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 300px;
+}
+.griditem3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../images/19.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 300px;
+}
+.item2{
+}
+.butt{
+    margin-top:50px;
+    margin-left: 680px;
+    color:white;
+    text-transform:uppercase;
+    background: transparent;
+    width: 200px;
+    padding: 15px 20px;
+    border: 2px solid #009688;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.butt a{
+    text-decoration:none;
+    color:white
+}
+.butt:hover{
+    font-weight: bolder;
+}
+.butt a:hover{
+    color: yellow;
+}
+.Father{
+    display:grid;
+    grid-template-columns:2fr 2fr 2fr;
+}
+.tab{
+    position:relative;
+    top: 100px;
+    font-family:"Poppins";
+    font-size:35px;
+    text-align:center;
+    height:80px;
+    background:transparent;
+    color:white;
+}
+.tab p{
+    margin-top:20px;
+}
+
+/* Support Us Buttons */
+.bn{
+    /* border: 1px solid white; */
+    /* display:grid;
+    grid-template-columns:1fr 1fr; */
+    margin-top:30px;
+}
+.b{
+    /* width: 70%; */
+    font-size:15px;
+    text-transform:uppercase;
+    margin-right:100px;
+    padding:10px 40px;
+    background:transparent;
+    border:2px solid #009688;
+    color: white;
+    cursor:pointer;
+}
+.b:hover{
+    font-weight:bolder;
+    color:yellow;
+    cursor:pointer;
+}
+.ba{
+    font-size:15px;
+    text-transform: uppercase;
+    margin-left:100px;
+    padding:10px 40px;
+    background:transparent;
+    color: white;
+    border:2px solid #009688;
+}
+.ba:hover{
+    font-weight:bolder;
+    color:yellow;
+    cursor:pointer;
 }
